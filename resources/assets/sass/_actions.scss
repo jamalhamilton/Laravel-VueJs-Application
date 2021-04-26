@@ -1,0 +1,118 @@
+.actions-group {
+
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+
+  form {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 14px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    &:not(:first-of-type) {
+      margin-left: -1px;
+    }
+  }
+
+}
+
+.action {
+  color: $cs-gray-mid-3;
+  border: 1px solid;
+  border-bottom-width: 2px;
+  padding: 5px 10px;
+  text-transform: lowercase;
+  display:  inline-block;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  //border-radius: 3px;
+  
+  &:hover {
+    text-decoration: none;
+    transition-duration: 300ms;
+    background: $cs-gray-mid-3;
+    color: $cs-white;
+    border-color: $cs-gray-mid-3;
+  }
+
+  &.danger {
+    color: $cs-red;
+
+    &:hover {
+      background: $cs-red;
+      color: $cs-white;
+      border-color: $cs-red;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;;
+
+    &:hover {
+      background: inherit;
+      color:inherit;
+      border-color: inherit;
+    }
+  }
+
+  &.secondary {
+    color: $cs-gray-mid-3;
+
+    &:hover {
+      background: $cs-gray-mid-3;
+      color: $cs-white;
+      border-color: $cs-gray-mid-3;
+    }
+  }
+
+  &.status-inactive {
+    color: $cs-status-inactive;
+
+    &:hover {
+      background: $cs-status-inactive;
+      border-color: $cs-status-inactive;
+      color: $cs-white;
+    }
+  }
+
+  &.status-active {
+    color: $cs-status-active;
+
+    &:hover {
+      background: $cs-status-active;
+      border-color: $cs-status-active;
+      color: $cs-white;
+    }
+  }
+
+  &.status-completed {
+    color: $cs-status-completed;
+
+    &:hover {
+      background: $cs-status-completed;
+      border-color: $cs-status-completed;
+      color: $cs-white;
+    }
+  }
+}
+
+#user-person-list .even .action {
+  background: #ffffff;
+
+  &:hover {
+    background: #707070;
+  }
+  
+  &.danger:hover {
+    background: #CA2128;
+  }
+}

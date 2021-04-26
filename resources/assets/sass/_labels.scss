@@ -1,0 +1,97 @@
+
+.label {
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  padding: 5px 11px;
+  border-radius: 3px;
+
+  &.small {
+    font-size: 0.8em;
+    padding: 5px 9px;
+  }
+
+  &.x-small {
+    font-size: 0.6em;
+    padding: 3px 7px;
+  }
+
+  &.radius {
+    border-radius: 3px;
+  }
+
+  &.count {
+    background: #aaa;
+    color: #fff;
+  }
+
+  &.caption {
+
+    background: #999;
+
+    /*&.music, &.Music {
+      background: $cs-caption-music;
+    }
+    &.show, &.Show {
+      background: $cs-caption-show;
+    }
+    &.combo, &.Combo {
+      background: $cs-caption-combo;
+    }
+    &.overall-show {
+      background: $cs-caption-show;
+    }
+
+    &.visual-performance {
+      background: $cs-caption-combo;
+    }
+
+    &.place {
+      background: $cs-gray-mid-3;
+    }*/
+  }
+
+  &.category {
+
+    background: #999;
+    color: $cs-white;
+
+    &.category-1 {
+      background: $cs-caption-music;
+    }
+
+    &.category-2 {
+      background: $cs-caption-combo;
+    }
+  } 
+
+  &.status {
+    //float: right;
+    color: $cs-white;
+    padding: 5px 8px;
+
+    &.completed {
+      background-color: $cs-status-completed;
+    }
+
+    &.active {
+      background-color: $cs-status-active;
+    }
+
+    &.inactive {
+      background-color: $cs-status-inactive;
+    }
+
+    &.finalized {
+      background-color: $cs-status-finalized;
+    }
+
+    &.archived {
+      background-color: $cs-status-archived;
+    }
+  }
+}

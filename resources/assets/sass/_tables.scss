@@ -1,0 +1,157 @@
+.table {
+  &.last-col-right {
+
+    th {
+      &:last-of-type:not(:only-of-type) {
+        text-align: right !important;
+      }
+    }
+    td {
+      &:last-of-type {
+        text-align: right !important;
+      }
+    }
+  }
+
+  tr.section-heading {
+    border-bottom: 2px solid;
+    font-size: 1.3em;
+  }
+
+}
+
+.table-wrapper-responsive {
+  overflow-x: scroll;
+  
+  table {
+    border-collapse: separate;
+  }
+  
+  .table-striped > tbody > tr > th {
+    background-color: #ffffff;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) > th {
+    background-color: #f9f9f9;
+  }
+
+  .table-striped > tbody > tr.caption-header > th {
+    background-color: transparent;
+  }
+  
+  .table-striped > tbody > tr.caption-header > th:first-child {
+    border-right: 0;
+  }
+  
+  .table-striped > tbody > tr.caption-header > th:last-child {
+    border-left: 0;
+  }
+  
+  tbody th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.sideways-header {
+  display: flex;
+  flex-grow: 1;
+  max-height: 150px;
+  
+  & a, & span {
+    display: inline;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.table > tbody > tr.align-bottom th,
+.table > tbody > tr.align-bottom td {
+  vertical-align: bottom;
+}
+
+// ZURB Responsive Tables
+// https://github.com/zurb/responsive-tables
+
+//@media only screen and (max-width: 767px) {
+
+	table.responsive {
+    margin-bottom: 0;
+    //background: yellow;
+    //-webkit-transform: translate3d(0, 0, 0);
+  }
+
+	.pinned {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 200px;
+    overflow: hidden;
+    overflow-x: scroll;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+
+	.pinned table {
+    border-right: none;
+    border-left: none;
+    width: 100%;
+  }
+	.pinned table th, .pinned table td {
+    white-space: nowrap;
+  }
+	.pinned td:last-child {
+    border-bottom: 0;
+  }
+
+	div.table-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-right: 2px solid #ccc;
+  }
+	div.table-wrapper div.scrollable {
+    margin-left: 200px;
+  }
+	div.table-wrapper div.scrollable {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
+	table.responsive td, table.responsive th {
+    //position: relative;
+    //white-space: nowrap;
+    //overflow: hidden;
+    //max-height: 60px;
+    //max-width: 100px;
+    //text-overflow: ellipsis;
+  }
+  .pinned table th, table.responsive th {
+    div {
+      height: 60px;
+      overflow: hidden;
+    }
+  }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td {
+    display: none;
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    .pinned {
+      width: 300px;
+    }
+
+    div.table-wrapper div.scrollable {
+      margin-left: 300px;
+    }
+  }
+
+
+//}

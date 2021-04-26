@@ -1,0 +1,391 @@
+
+.list-group {
+
+
+  .list-group-item {
+
+    &:hover {
+      background: $cs-gray-light;
+    }
+
+    &.unpadded {
+      padding: 0;
+      margin-bottom: 10px;
+      .header {
+        padding: 5px 10px;
+        background: $cs-gray-light;
+      }
+      .body {
+        padding: 5px 10px;
+      }
+    }
+
+    .group {
+      margin-bottom: 5px;
+    }
+
+    &.choice {
+
+      padding-left: 45px;
+
+      .checkbox {
+        position: relative;
+        margin: 0;
+
+
+        & input {
+          margin-left: -25px;
+          margin-top: 8px;
+        }
+      }
+
+      .input-container {
+        position: relative;
+        margin: 0;
+        float: left;
+
+        & input {
+          margin-left: -30px;
+          margin-top: 6px;
+          width: 22px;
+          font-size: 11px;
+          text-align: center;
+        }
+      }
+    }
+
+    .actions-group {
+      margin-top: 10px;
+      //border-top: 1px dashed $cs-gray-mid-1;
+      clear: both;
+
+      .action {
+        //border: none;
+        //text-decoration: underline;
+
+        &.danger:hover {
+          background: $cs-red;
+        }
+
+        &:hover {
+          background: $cs-gray-mid-3;
+          color: $cs-white;
+        }
+        &:active {
+          background: $cs-gray-mid-3;
+          color: $cs-white;
+        }
+      }
+    }
+
+    &.award {
+      .name {
+        font-size: 22px;
+        //line-height: 26px;
+        display: block;
+        //margin-bottom: 5px;
+      }
+      .description {
+        font-size: 14px;
+        line-height: 18px;
+        display: block;
+        margin-top: 5px;
+      }
+      .owner {
+        display: none;
+      }
+      .recipient {
+        //border: 1px solid #ddd;
+        display: block;
+        margin-top: 15px;
+
+        .heading {
+          background: $cs-green;
+          color: $cs-white;
+          padding: 5px;
+          //display: block;
+          margin-bottom: 5px;
+        }
+        .name {
+          padding: 0 5px;
+          font-size: 18px;
+          display: inline;;
+          //line-height: 22px;
+        }
+        .choir {
+          padding: 0 5px;
+          font-size: 18px;
+          display: inline;;
+        }
+      }
+      .sponsor {
+        display: block;
+        margin: 15px 0;
+
+        .heading {
+          //padding: 5px;
+          //display: block;
+          margin-bottom: 5px;
+        }
+        .name {
+          //padding: 0 5px;
+          display: inline;;
+          font-size: 18px;
+        }
+      }
+
+    }
+
+    &.choir {
+      .school {
+        font-size: 16px;
+        line-height: 19px;
+        display: block;
+        margin-bottom: 3px;
+        color: $cs-gray-mid-3;
+      }
+      .name {
+        font-size: 21px;
+        //line-height: 22px;
+        display: block;
+        //text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .location {
+        display: inline-block;
+        font-style: italic;
+        color: $cs-gray-mid-2;
+        //float: right;
+      }
+
+      .performance-order {
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 25px 10px 10px;
+      }
+
+      .sort-handle {
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 25px 10px 10px;
+      }
+    }
+
+    &.school {
+      .name {
+        font-size: 21px;
+        //line-height: 22px;
+        display: block;
+        //text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .location {
+        display: inline-block;
+        font-style: italic;
+        color: $cs-gray-mid-2;
+        //float: right;
+      }
+    }
+
+    &.caption {
+      .name {
+        font-size: 21px;
+        //line-height: 22px;
+        display: block;
+        //text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .color_swatch {
+        float: left;
+        width: 30px;
+        height: 30px;
+      }
+
+    }
+
+    &.person {
+      .name {
+        font-size: 22px;
+        //line-height: 26px;
+        display: inline-block;
+        //margin-bottom: 5px;
+      }
+    }
+
+    &.judge {
+      .name {
+        font-size: 22px;
+        //line-height: 26px;
+        display: inline-block;
+        //margin-bottom: 5px;
+      }
+      ul.captions-group {
+        display:  inline-block;
+        float: right;
+        margin: 0;
+        padding: 0;
+
+        li.caption {
+          display: inline-block;
+          padding: 5px 8px;
+          color: $cs-white;
+          float:  left;
+          margin-left: 3px;
+
+          &.music {
+            background: $cs-caption-music;
+          }
+          &.show {
+            background: $cs-caption-show;
+          }
+        }
+      }
+    }
+
+    &.round {
+      .name {
+        font-size: 22px;
+        //line-height: 26px;
+        display: inline-block;
+        //margin-bottom: 5px;
+      }
+
+      .status {
+        float: right;
+      }
+    }
+
+    &.penalty {
+
+      input {
+        margin-top: 10px;
+      }
+      input + .group {
+        margin-left: 15px;
+      }
+      .name {
+        font-size: 22px;
+        //line-height: 26px;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .description {
+        font-size: 14px;
+        line-height: 18px;
+        display: block;
+      }
+
+      .details {
+        display: block;
+        margin-top: 5px;
+        text-align: right;
+
+        .amount {
+          font-weight: bold;
+          color: $cs-red;
+          font-size: 1.3em;
+        }
+        .apply_per_judge {
+          font-weight: bold;
+          display: block;
+          //text-decoration: underline;
+        }
+      }
+
+    }
+
+    &.standing {
+      .choir {
+        font-size: 21px;
+        font-weight: bold;
+      }
+
+      .rating {
+        margin: 0 1em;
+        font-style: italic;
+      }
+
+      .details {
+        float: right;
+
+        .tied {
+          display: inline-block;
+          position: relative;
+          top: -10px;
+          margin: 0 -10px 0 -4px;
+          padding: 0 4px 1px;
+          border-radius: 4px;
+          background: $cs-purple;
+          color: #ffffff;
+          font-size: 11px;
+          letter-spacing: .5px;
+        }
+
+        .final_rank {
+          font-weight: bold;
+          color: $cs-purple;
+          font-size: 2em;
+          margin-left: 10px;
+
+          &.ceremony {
+            font-size: 1.2em;
+            color: inherit;
+
+            &.rank-1 {
+              font-size: 2em;
+            }
+          }
+
+          & .text {
+            font-size: 0.5em;
+          }
+
+          & input {
+            max-width: 60px;
+          }
+
+        }
+
+        .raw_rank {
+          color: $cs-gray-mid-3;
+        }
+      }
+    }
+  }
+
+  &.sortable-list {
+
+    .list-group-item {
+
+      .sort-handle {
+        &:hover {
+          cursor: grab;
+        }
+      }
+
+
+      &.sortable-drag {
+        font-weight: bold;
+        cursor: grab;
+        background-color: $cs-green-lighter;
+      }
+
+      &.sortable-chosen {
+        font-weight: bold;
+        cursor: grabbing;
+        background-color: $cs-green-lighter;
+      }
+
+      &.sortable-ghost {
+        border: 1px dotted;
+      }
+    }
+  }
+
+}
